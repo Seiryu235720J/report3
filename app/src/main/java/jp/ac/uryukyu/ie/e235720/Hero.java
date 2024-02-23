@@ -6,6 +6,7 @@ public class Hero extends LivingThing {
         super(name, maximumHP, attack);
     }
 
+
     @Override
     public void wounded(int damage) {
         super.wounded(damage);
@@ -13,5 +14,10 @@ public class Hero extends LivingThing {
             System.out.printf("勇者%sは道半ばで力尽きてしまった。\n", getName());
         }
     }
+
+    public int getAttack() {
+        return attack;
+    }
+
     
 }
